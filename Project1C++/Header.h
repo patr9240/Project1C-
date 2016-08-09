@@ -22,8 +22,9 @@ class Character {
 
 	struct {
 		string Name;
-		string Score;
-		string Time;
+		int Health;
+		vector<string> Items;
+
 	};
 public:
 	void move() {
@@ -58,7 +59,11 @@ public:
 
 //Enemy class
 class Enemy {
-
+	struct {
+		string Name;
+		int Health;
+		int Damage;
+	};
 public:
 	void health() {
 		
@@ -83,6 +88,10 @@ public:
 //NPC class
 class NPC {
 public:
+	struct {
+		string Name;
+
+	};
 	void encounter() {
 
 	}//end of encounter
