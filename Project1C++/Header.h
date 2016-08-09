@@ -24,6 +24,7 @@ class Character {
 	struct {
 		string Name;
 		int Health;
+		int Humanity;
 		vector<string> Items;
 
 	};
@@ -46,6 +47,7 @@ public:
 		}
 	}//end of crit
 	void avoidance() {
+
 
 	}//end of avoidance
 	void health() {
@@ -80,11 +82,24 @@ public:
 	void attack() {
 
 	}//end of attack
-	void crit() {
-
+	 //random chance to critically strike with an attack; true = crit, false = not crit
+	bool crit() {
+		int randNum = rand() % 100 + 1;
+		if (randNum > 75) {
+			return true;
+		}
+		else {
+			return false;
+		}
 	}//end of crit
-	void avoidance() {
-
+	bool avoidance() {
+		int randNum = rand() % 100 + 1;
+		if (randNum > 85) {
+			return true;
+		}
+		else {
+			return false;
+		}
 	}//end of avoidance
 	void encounter() {
 
