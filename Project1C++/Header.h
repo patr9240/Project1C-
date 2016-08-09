@@ -15,6 +15,7 @@ using namespace std;
 
 //Declare prototypes
 void PrintMenu();
+void OpeningDescription();
 
 //Declare Classes
 //Character class
